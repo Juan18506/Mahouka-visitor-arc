@@ -1,0 +1,85 @@
+.header {
+  background-color: lightgray;
+
+  position: absolute;
+  top: 1em;
+  right: 0;
+  z-index: 4;
+}
+.header__nav {
+  background-color: black;
+
+  padding: 0 3em 0 9em;
+}
+    .nav__ul {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    .nav__li {
+      background-color: black;
+    }
+    .nav__a {
+      color: white;
+      font-size: .85em;
+      white-space: nowrap;
+
+      padding: .3em 1em;
+    }
+    .nav__a:target {
+      color: #393939;
+    }
+    .nav__a:hover {
+      color: #39c;
+    }
+
+
+.main {}
+.main__ppal {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+  z-index: 0;
+
+  background: url(../assets/kv.jpg) 50% 92.5% / 110%;
+}
+.main__ppal::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+    .ppal__h1 {
+      width: 12em;
+      height: 20em;
+
+      position: absolute;
+      z-index: 3;
+      top: 1em;
+      left: 1em;
+    }
+    .ppal__img--center {
+      width: auto;
+      height: 100vh;
+
+      position: absolute;
+      z-index: 2;
+
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .ppal__img--text {
+      width: 32em;
+      height: 7em;
+
+      position: absolute;
+      z-index: 3;
+      top: 6em;
+      right: 2.5em;
+    }
