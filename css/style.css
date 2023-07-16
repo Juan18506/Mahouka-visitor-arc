@@ -1,14 +1,11 @@
 .header {
-  background-color: lightgray;
-
   position: absolute;
-  top: 1em;
-  right: 0;
   z-index: 4;
+  top: 1.5em;
+  right: 0;
 }
 .header__nav {
   background-color: black;
-
   padding: 0 3em 0 9em;
 }
     .nav__ul {
@@ -23,7 +20,7 @@
       font-size: .85em;
       white-space: nowrap;
 
-      padding: .3em 1em;
+      padding: .5em 1em;
     }
     .nav__a:target {
       color: #393939;
@@ -61,8 +58,8 @@
 
       position: absolute;
       z-index: 3;
-      top: 1em;
-      left: 1em;
+      top: 1.5em;
+      left: 1.5em;
     }
     .ppal__img--center {
       width: auto;
@@ -72,7 +69,7 @@
       z-index: 2;
 
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-41%);
     }
     .ppal__img--text {
       width: 32em;
@@ -80,6 +77,20 @@
 
       position: absolute;
       z-index: 3;
-      top: 6em;
-      right: 2.5em;
+      top: 7em;
+      right: 2em;
     }
+
+
+@keyframes main_img_animation {
+  from {
+    background: url(../assets/kv.jpg) 50% 0% / 110%;
+    filter: blur(6em);
+  }
+  2.5% {
+    filter: blur(0);
+  }
+  to {
+    background: url(../assets/kv.jpg) 50% 92.5% / 110%;
+  }
+}
