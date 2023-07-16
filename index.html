@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Irregular at Magic High School: Visitor Arc</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/index.js"></script>
@@ -24,24 +30,40 @@
           <li class="nav__li"><a href="#" class="nav__a">KEYWORD</a></li>
           <li class="nav__li"><a href="#" class="nav__a">TRAILER</a></li>
           <li class="nav__li"><a href="#" class="nav__a">BLU-RAY</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">FACEBOOK</a></li>
+          <li class="nav__li"><a href="#facebook" class="nav__a"><span class="nav__span">FACEBOOK</span></a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main">
-
       <h1 class="ppal__h1">
         <img src="assets/logo.png" alt="#" class="ppal__img--logo" />
       </h1>
 
-      <section class="main__ppal ppal" id="ppal">
+      <div class="main__ppal ppal" id="ppal">
         <img src="assets/kv_min.jpg" alt="" class="ppal__img--center" />
         <img src="assets/copy_1_1_pc.png" alt="#" class="ppal__img--text" />
-      </section>
 
+        <div class="ppal__streaming streaming">
+          <img src="assets/copy_date.png" alt="#" class="streaming__img" />
+          <div class="streaming__border">
+            <iframe
+            width="300"
+            height="169"
+            src="https://www.youtube.com/embed/OWvSWvvmRS8?autoplay=1&mute=1&controls=0&loop=1&showinfo=0&playlist=OWvSWvvmRS8&modestbranding=0&autohide=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="streaming__iframe"
+          ></iframe>
+          <img src="assets/btn_play.png" alt="#" class="streaming__btn">
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer></footer>
+    <footer>
+    </footer>
   </body>
 </html>
