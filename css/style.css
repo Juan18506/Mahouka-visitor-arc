@@ -7,13 +7,14 @@
 .header__nav {
   background-color: black;
   padding: 0 3em 0 9em;
+
+  transition: padding .25s linear 1.4s;
 }
     .nav__ul {
       display: flex;
       flex-flow: row nowrap;
     }
     .nav__li {
-      background-color: black;
     }
     .nav__a {
       color: white;
@@ -39,6 +40,8 @@
   z-index: 0;
 
   background: url(../assets/kv.jpg) 50% 92.5% / 110%;
+
+  animation: main_img_animation 60s linear;
 }
 .main__ppal::after {
   content: '';
@@ -60,7 +63,10 @@
       z-index: 3;
       top: 1.5em;
       left: 1.5em;
+
+      animation: opacity_animation 1s ease-in;
     }
+    .ppal__img--logo {}
     .ppal__img--center {
       width: auto;
       height: 100vh;
@@ -70,15 +76,21 @@
 
       left: 50%;
       transform: translateX(-41%);
+
+      animation: opacity_animation 2.5s ease-out;
     }
     .ppal__img--text {
       width: 32em;
       height: 7em;
+      
+      margin-top: 2em;
 
       position: absolute;
       z-index: 3;
-      top: 7em;
+      top: 5em;
       right: 2em;
+
+      transition: margin .25s linear 1.4s;
     }
 
 
@@ -92,5 +104,17 @@
   }
   to {
     background: url(../assets/kv.jpg) 50% 92.5% / 110%;
+  }
+}
+
+@keyframes opacity_animation {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.01;
+  }
+  to {
+    opacity: 1;
   }
 }
