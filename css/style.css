@@ -106,7 +106,11 @@
   position: absolute;
   z-index: 3;
   bottom: 27.5em;
-  left: 2em;
+  left: .5em;
+
+  margin-left: 1.5em;
+
+  animation: streaming_animation 60s linear 0s;
 }
     .streaming__img {
       margin-bottom: .5em;
@@ -199,5 +203,22 @@
   }
   3% {
     padding: 0em .625em 0em 9em;
+  }
+}
+
+@keyframes streaming_animation {
+  from {
+    opacity: 0;
+    margin-left: 0;
+  }
+  2.4% {
+    opacity: 0;
+  }
+  2.5% {
+    margin-left: 0;
+    opacity: 1;
+  }
+  3% {
+    margin-left: 1.5em;
   }
 }
