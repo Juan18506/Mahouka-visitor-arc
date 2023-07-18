@@ -1,3 +1,7 @@
+.body {
+  position: relative;
+}
+
 .header {
   position: absolute;
   z-index: 4;
@@ -202,7 +206,7 @@
       border-bottom: 1px solid black;
     }
 
-.main__modal {
+.modal {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .9);
@@ -218,8 +222,8 @@
       width: 57.5rem;
       height: 32.375rem;
 
-      position: relative;
-      top: 50%;
+      position: fixed;
+      top: 50vh;
       left: 50%;
       transform: translate(-50%, -50%)
     }
@@ -227,7 +231,7 @@
       width: 100px;
       height: 100px;
 
-      position: absolute;
+      position: fixed;
       right: 4em;
       top: 3em;
 
