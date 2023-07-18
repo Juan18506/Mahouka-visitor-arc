@@ -7,7 +7,6 @@ addEventListener('DOMContentLoaded', () => {
   
   document.getElementById('video').addEventListener('click', () => {
     modal.style.display = 'block'
-    
   })
 
   document.getElementById('close_btn').addEventListener('click', () => {
