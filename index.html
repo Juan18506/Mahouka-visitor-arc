@@ -40,33 +40,48 @@
     </header>
 
     <main class="main">
-      <h1 class="ppal__h1">
-        <img src="assets/logo.png" alt="mahouka logo" class="ppal__img--logo" />
+      <h1 class="main__h1">
+        <img
+          src="assets/logo.png"
+          alt="mahouka logo"
+          class="main__img main__img--logo"
+        />
       </h1>
 
-      <div class="main__ppal ppal" id="ppal">
+      <div class="main__ppal ppal">
         <img
           src="assets/kv_min.jpg"
           alt="mahouka pv image"
           class="ppal__img--center"
-          id="img-center"
         />
-        <img src="assets/copy_1_1_pc.png" alt="the premise of the mahouka second season story" class="ppal__img--text" />
+        <img
+          src="assets/copy_1_1_pc.png"
+          alt="the premise of the mahouka second season story"
+          class="ppal__img ppal__img--text"
+        />
+      </div>
 
-        <div class="ppal__streaming streaming">
-          <img src="assets/copy_date.png" alt="now streaming logo" class="streaming__img" />
-          <div class="streaming__border" id="video">
-            <iframe
-              width="300"
-              height="169"
-              src="https://www.youtube.com/embed/OWvSWvvmRS8?autoplay=1&mute=1&controls=0&loop=1&playlist=OWvSWvvmRS8"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              title="YouTube video player"
-              allowfullscreen
-              class="streaming__iframe"
-            ></iframe>
-            <img src="assets/btn_play.png" alt="play video button" class="streaming__btn" />
-          </div>
+      <div class="main__streaming streaming">
+        <img
+          src="assets/copy_date.png"
+          alt="now streaming logo"
+          class="streaming__img"
+        />
+        <div class="streaming__border">
+          <iframe
+            width="300"
+            height="169"
+            src="https://www.youtube.com/embed/OWvSWvvmRS8?autoplay=1&mute=1&controls=0&loop=1&playlist=OWvSWvvmRS8"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            title="YouTube video player"
+            allowfullscreen
+            class="streaming__iframe"
+          ></iframe>
+          <img
+            src="assets/btn_play.png"
+            alt="play video button"
+            class="streaming__btn"
+          />
         </div>
       </div>
 
@@ -95,13 +110,11 @@
           </div>
         </div>
       </div>
-
     </main>
-    
-    <div class="modal" id="modal">
+
+    <div class="modal">
       <iframe
         class="modal__iframe"
-        id="modal__iframe"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/OWvSWvvmRS8"
@@ -110,7 +123,7 @@
         allowfullscreen
       ></iframe>
 
-      <div class="modal__close" id="close_btn">
+      <div class="modal__close">
         <svg
           class="modal__svg"
           viewBox="0 0 24 24"
@@ -139,10 +152,16 @@
 
     <div class="banner">
       <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img src="assets/bnr_tv01.jpg" alt="mahouka first season banner" class="banner__img"
+        ><img
+          src="assets/bnr_tv01.jpg"
+          alt="mahouka first season banner"
+          class="banner__img"
       /></a>
       <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img src="assets/bnr_movie.jpg" alt="mahouka first movie banner" class="banner__img"
+        ><img
+          src="assets/bnr_movie.jpg"
+          alt="mahouka first movie banner"
+          class="banner__img"
       /></a>
     </div>
 
