@@ -374,6 +374,7 @@
   .main__ppal::after {
     display: none;
   }
+
   .main {
     display: flex;
     flex-flow: column nowrap;
@@ -383,6 +384,8 @@
   .main__ppal {
     animation: none;
     background: url('../assets/kv_min.jpg') center / cover;
+    width: 100vw;
+    height: calc((100vw * 1500) / 1059);
   }
   .main__streaming {
     position: static;
@@ -404,11 +407,11 @@
     animation: none;
   }
   .streaming__img {
-    padding: 2em;
+    padding: 2em 1em;
   }
   .streaming__iframe {
-    width: 690px;
-    height: 388.13px;
+    width: 100vw;
+    height: calc((100vw * 9) / 16);
   }
   .streaming__border::after {
     border: 0;
@@ -417,7 +420,7 @@
     background: rgba(0, 0, 0, 0.6);
   }
   .streaming__btn {
-    width: 3em;
+    width: 10vw;
     height: auto;
     bottom: 0.5em;
     right: 0.5em;
@@ -441,6 +444,22 @@
   .news__a:hover {
     color: inherit;
   }
+
+  .modal {
+    display: block;
+  }
+  .modal__iframe {
+    width: 100vw;
+    height: calc((100vw * 9) / 16);
+  }
+  .modal__close {
+    padding: 0.5em;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+
   .banner {
     padding: 2em;
   }
@@ -448,6 +467,7 @@
     width: 9.375rem;
     height: auto;
   }
+
   .footer {
     flex-direction: column;
     justify-content: center;
