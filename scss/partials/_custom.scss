@@ -1,0 +1,23 @@
+:root{
+  --negro         : #393939;
+  
+  --tipo-principal   : 'Noto Serif JP', Arial, sans-serif;
+  --tipo-secundaria  : Verdana;
+}
+  
+// @media (prefers-color-scheme: dark) {
+//   :root{
+//     --negro: #ececec;
+//   }
+// }
+
+// @media (prefers-contrast: high){
+//     :root{}
+// }
+
+// @media (prefers-reduced-motion: reduce) {
+//   * {
+//     animation: none !important;
+//     transition: none !important;
+//   }
+// }
