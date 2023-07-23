@@ -178,6 +178,7 @@ body {
 }
 .hero__img {
   position: absolute;
+  pointer-events: none;
 }
 .hero__img--logo {
   top: 1.5em;
@@ -209,6 +210,7 @@ body {
   bottom: 30%;
   left: 0.5em;
   z-index: 3;
+  pointer-events: none;
 }
 
 .streaming__img {
@@ -219,6 +221,7 @@ body {
   height: 8.4727em;
   position: relative;
   z-index: 1;
+  pointer-events: all;
 }
 .streaming__border::after {
   content: "";
@@ -242,7 +245,6 @@ body {
 .streaming__iframe {
   width: 100%;
   height: 100%;
-  pointer-events: none;
 }
 .streaming__btn {
   width: 1.875em;
@@ -252,6 +254,88 @@ body {
   bottom: 0;
   right: 0;
   z-index: 4;
+  pointer-events: none;
+}
+
+.news {
+  width: 100%;
+  height: 12em;
+  background-color: var(--c-black);
+}
+.news__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+.news__container--item {
+  width: auto;
+  height: auto;
+  gap: 1.5em;
+}
+.news__a {
+  height: 7.5rem;
+  width: 22rem;
+  padding: 1.25rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.75em;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.news__a:hover {
+  color: var(--c-blue);
+}
+.news__a--news {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid var(--c-white);
+  font-size: 1em;
+  background-color: var(--c-black);
+  color: var(--c-white);
+}
+.news__a--news:hover {
+  color: var(--c-white);
+}
+.news__time {
+  width: 100%;
+  padding-bottom: 0.5em;
+  display: block;
+  font-weight: bold;
+  border-bottom: 1px solid black;
 }
 
 body {
