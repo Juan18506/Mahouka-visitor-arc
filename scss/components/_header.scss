@@ -1,0 +1,29 @@
+@use '../partials/mixins' as mx;
+
+.header{
+  position: absolute;
+  top: 1.1em;
+  right: 0;
+  z-index: 4;
+  background: linear-gradient(90deg, rgba(108, 108, 108, 0) 0%, rgba(0, 0, 0, 1) 11%);
+  
+  &__nav{
+    padding: 0 0.625em 0 9em;
+    margin-right: 1em; 
+  }
+  &__ul{
+    @include mx.flex(row, nowrap, flex-end, center);
+    gap: 0.25em;
+  }
+  &__li{}
+  &__a{
+    padding: 0.75em 1.2em;
+    font-size: 0.75em;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    color: var(--c-white);
+    transition: all 0.5s ease;
+
+    &:hover{ color: var(--c-blue); }
+  }
+}

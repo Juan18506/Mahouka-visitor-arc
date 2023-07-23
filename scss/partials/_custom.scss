@@ -1,8 +1,13 @@
 :root{
-  --negro         : #393939;
+  --c-black: #000;
+  --c-grey:#393939;
+  --c-white: #fff;
+  --c-blue: #009be5;
+  --c-bg-opacity: rgba(0, 0, 0, 0.7);
+  --c-bg-nopacity: rgba(0, 0, 0, 0);
   
-  --tipo-principal   : 'Noto Serif JP', Arial, sans-serif;
-  --tipo-secundaria  : Verdana;
+  --tipo-principal: 'Noto Serif JP', Arial, sans-serif;
+  --tipo-secundaria: Verdana;
 }
   
 // @media (prefers-color-scheme: dark) {

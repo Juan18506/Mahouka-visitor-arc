@@ -1,3 +1,11 @@
 @use 'partials/custom';
 @use 'partials/reset';
 
+@use 'components/header';
+@use 'components/hero';
+
+body {
+  position: relative;
+  background-color: lightgray;
+}
+
