@@ -50,8 +50,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: var(--c-black);
+  color: var(--c-white);
 }
 
 form , input, textarea, select , button , label{
@@ -78,7 +78,7 @@ svg{
 body {
   min-height  : 100vh;
   font-size   : 100%;
-  font-family : var(--tipo-principal);
+  font-family : var(--primary-fonts);
   color       : var(--c-black);
   hyphens: auto;
   font-smooth: always;

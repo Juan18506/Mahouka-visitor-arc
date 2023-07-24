@@ -1,0 +1,13 @@
+@use '../partials/mixins' as mx;
+
+.banner {
+  padding: 1.5rem 0;
+  @include mx.flex(row, nowrap, center, center);
+  gap: 1.5rem;
+  background-color: var(--c-grey);
+
+  &__img {
+    width: 13.75rem;
+    height: auto;
+  }
+}

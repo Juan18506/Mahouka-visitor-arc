@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Irregular at Magic High School: Visitor Arc</title>
+  <meta name="description" content="Mahouka 2nd season anime web page clone">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +17,22 @@
 <body>
 
   <header class="header">
+    <!-- <div class="header__mobile mobile">
+      <div class="mobile__close">
+        <button class="mobile__button">
+          <div class="mobile__icon"></div>
+          <div class="mobile__icon"></div>
+          <div class="mobile__icon"></div>
+        </button>
+      </div>
+      <div class="mobile__open">
+        <button class="mobile__button">
+          <div class="mobile__icon"></div>
+          <div class="mobile__icon"></div>
+          <div class="mobile__icon"></div>
+        </button>
+      </div>
+    </div> -->
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li"><a href="#" class="header__a header__a--active" title="TOP">TOP</a></li>
@@ -37,26 +54,26 @@
   <main class="main">
     
     <section class="main__hero hero">
-      <h1 class="hero__h1"><img src="assets/logo.png" alt="mahouka logo" class="hero__img hero__img--logo" /></h1>
-      <img class="hero__img hero__img--center" src="assets/kv_min.jpg" alt="mahouka pv image" />
-      <img class="hero__img hero__img--text" src="assets/copy_1_1_pc.png" alt="the premise of the mahouka second season story" />
+      <h1 class="hero__h1"><img src="assets/logo.webp" alt="mahouka logo" class="hero__img hero__img--logo" loading="lazy" /></h1>
+      <img class="hero__img hero__img--center" src="assets/kv_min.webp" alt="mahouka pv image" loading="lazy" />
+      <img class="hero__img hero__img--text" src="assets/copy_1_1_pc.webp" alt="the premise of the mahouka second season story" loading="lazy" />
 
       <div class="hero__streaming streaming">
-        <img src="assets/copy_date.png" alt="now streaming" class="streaming__img" />
+        <img src="assets/copy_date.webp" alt="now streaming" class="streaming__img" loading="lazy" />
         <div class="streaming__border">
           <iframe class="streaming__iframe" width="560" height="315"
             src="https://www.youtube.com/embed/OWvSWvvmRS8?autoplay=1&mute=1&controls=0&loop=1&playlist=OWvSWvvmRS8"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-          <img src="assets/btn_play.png" alt="play video button" class="streaming__btn" />
+          <img src="assets/btn_play.webp" alt="play video button" class="streaming__btn" loading="lazy"/>
         </div>
       </div>
     </section>
 
     <div class="main__news news">
       <div class="news__container">
-        <a href="#" class="news__a news__a--news"><p class="news__p">NEWS</p></a>
+        <a href="#" class="news__a news__a--news" title="NEWS"><p class="news__p">NEWS</p></a>
 
         <div class="news__container news__container--item">
           <a href="#" class="news__a" title="mahouka news">
@@ -77,22 +94,31 @@
 
   </main>
 
+  <div class="banner">
+    <a href="https://mahouka.us/1st/" target="_blank" rel="noopener noreferrer" title="mahouka first season web page">
+      <img src="assets/bnr_tv01.webp" alt="mahouka first season banner" class="banner__img" loading="lazy"/>
+    </a>
+    <a href="https://mahouka.us/movie/" target="_blank" rel="noopener noreferrer" title="mahouka first movie web page">
+      <img src="assets/bnr_movie.webp" alt="mahouka first movie banner" class="banner__img" loading="lazy"/>
+    </a>
+  </div>
+
   <footer class="footer">
     <div class="footer__background">
-      <img class="footer__img" src="assets/bg_circle_footer.gif" alt="a circle gif" />
+      <img class="footer__img" src="assets/bg_circle_footer.gif" alt="a circle gif"/>
     </div>
 
     <ul class="footer__ul">
       <li class="footer__li"><span class="footer__span">SHARE</span></li>
       <li class="footer__li">
-        <a href="#" class="footer__a">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmahouka.us%2F" class="footer__a" title="facebook logo" target="_blank" rel="noopener noreferrer">
           <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
           </svg>
         </a>
       </li>
       <li class="footer__li">
-        <a href="#" class="footer__a">
+        <a href="https://twitter.com/intent/tweet?text=A%20battle%20between%20the%20most%20powerful%20brother%20and%20sister%20duo%20and%20the%20undefeated%20visitor.%20%0APremieres%20October%203rd%2C%202020%20on%20Funimation!%0A%0Ahttps%3A%2F%2Fmahouka.us%2F2nd%2F" class="footer__a" title="share on twitter" target="_blank" rel="noopener noreferrer">
           <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
           </svg>
@@ -102,8 +128,8 @@
 
     <div class="footer__wrapper wrapper">
       <div class="wrapper__text">
-        <a href="#" class="wrapper__a" title="mahouka anime rights">JAPANESE</a>
-        <a href="#" class="wrapper__a" title="mahouka anime rights">ANIPLEX OF AMERICA</a>
+        <a href="https://mahouka.jp/" class="wrapper__a" title="mahouka main website" target="_blank" rel="noopener noreferrer">JAPANESE</a>
+        <a href="https://aniplexusa.com/" class="wrapper__a" title="aniplex web page" target="_blank" rel="noopener noreferrer">ANIPLEX OF AMERICA</a>
       </div>
       <p class="wrapper__p">©2019 Tsutomu Sato/KADOKAWA CORPORATION/MAGIC HIGH SCHOOL 2 COMMITTEE</p>
     </div>

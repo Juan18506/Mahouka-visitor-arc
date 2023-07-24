@@ -9,7 +9,7 @@
   
   &__nav{
     padding: 0 0.625em 0 9em;
-    margin-right: 1em; 
+    margin-right: 1em;
   }
   &__ul{
     @include mx.flex(row, nowrap, flex-end, center);
@@ -27,9 +27,16 @@
     &:hover{ color: var(--c-blue); }
 
     &--active{
-      color: var(--c-grey);
+      color: var(--c-lightgrey);
 
-      &:hover{ color: var(--c-grey) };
+      &:hover{ color: var(--c-lightgrey) };
     }
   }
+  &__mobile{}
+}
+
+.mobile{
+  &__close{ display: none; }
+  &__open{ display: none; }
+  &__icon{}
 }

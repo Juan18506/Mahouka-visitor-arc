@@ -5,7 +5,7 @@
   width: 100%;
   position: relative;
   z-index: 0;
-  background: url(../assets/kv.jpg) 50% 92.5% / 110%;
+  background: url(../assets/kv.webp) 50% 92.5% / 110%;
   
   &::after{
     content: '';
@@ -19,7 +19,7 @@
     background-color: var(--c-bg-opacity);
   }
   
-  &__h1 {
+  &__h1{
     width: 12em;
     height: 20em;
     position: relative;
@@ -50,7 +50,7 @@
       z-index: 3;
     }
   }
-  &__streaming {
+  &__streaming{
     max-width: 15em;
     height: auto;
     margin-left: 1.5em;
@@ -62,16 +62,20 @@
   }
 }
 
-.streaming {
-  &__img { margin-bottom: 0.5em; }
-  &__border {
+.streaming{
+  &__img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5em; 
+  }
+  &__border{
     width: 15.0625em;
     height: 8.4727em;
     position: relative;
     z-index: 1;
     pointer-events: all;
 
-    &::after {
+    &::after{
       content: '';
       width: 100%;
       height: 100%;
@@ -85,16 +89,16 @@
       cursor: pointer;
       transition: all 0.5s ease;
     }
-    &:hover::after {
+    &:hover::after{
       background-color: var(--c-bg-nopacity);
       border-color: var(--c-blue);
     }
   }
-  &__iframe { 
+  &__iframe{ 
     width: 100%;
     height: 100%;
   }
-  &__btn {
+  &__btn{
     width: 1.875em;
     height: 1.875em;
     margin: 0.75em;

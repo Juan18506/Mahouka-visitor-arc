@@ -1,29 +1,12 @@
 :root{
   --c-black: #000;
-  --c-grey: #636363;
+  --c-grey: #131313;
   --c-lightgrey: #9a9a9a;
   --c-white: #fff;
   --c-blue: #009be5;
   --c-bg-opacity: rgba(0, 0, 0, 0.7);
   --c-bg-nopacity: rgba(0, 0, 0, 0);
   
-  --tipo-principal: 'Noto Serif JP', Arial, sans-serif;
-  --tipo-secundaria: Verdana;
+  --primary-fonts: 'Noto Serif JP', Arial, sans-serif;
+  --secondary-fonts: Verdana;
 }
-  
-// @media (prefers-color-scheme: dark) {
-//   :root{
-//     --negro: #ececec;
-//   }
-// }
-
-// @media (prefers-contrast: high){
-//     :root{}
-// }
-
-// @media (prefers-reduced-motion: reduce) {
-//   * {
-//     animation: none !important;
-//     transition: none !important;
-//   }
-// }

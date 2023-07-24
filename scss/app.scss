@@ -2,12 +2,11 @@
 @use 'partials/reset';
 
 @use 'components/header';
-@use 'components/hero';
-@use 'components/news';
+@use 'components/main';
+@use 'components/banner';
 @use 'components/footer';
 
 body {
   position: relative;
-  background-color: lightgray;
 }
 
