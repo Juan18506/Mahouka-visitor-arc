@@ -36,6 +36,9 @@
   &__svg{
     width: 1.5625em;
     height: 1.5625em;
+    transition: all 0.5s ease;
+
+    &:hover{ opacity: var(--opacity) }
   }
   &__wrapper{
     @include mx.flex(column, nowrap, center, flex-end);
@@ -53,7 +56,7 @@
     color: var(--c-white);
     transition: all 0.5s ease;
 
-    &:hover{ color: var(--c-lightgrey); }
+    &:hover{ opacity: var(--opacity); }
   }
   &__p{
     font-size: 0.75em;

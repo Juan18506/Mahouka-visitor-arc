@@ -1,13 +1,16 @@
 @use '../partials/mixins' as mx;
 
-.banner {
+.banner{
   padding: 1.5rem 0;
   @include mx.flex(row, nowrap, center, center);
   gap: 1.5rem;
   background-color: var(--c-grey);
 
-  &__img {
+  &__img{
     width: 13.75rem;
-    height: auto;
+    height: 100%;
+    transition: all 0.5s ease;
+
+    &:hover{ opacity: var(--opacity); }
   }
 }

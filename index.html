@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +10,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css">
-  <script defer src="js/index.js"></script>
+  <script defer src="js/_dist/index.js"></script>
 </head>
 
 <body>
 
+  <div class="modal modal--inactive">
+    <iframe class="modal__iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/OWvSWvvmRS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <button class="modal__btn" title="close modal">
+      <svg class="modal__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+    </button>
+  </div>
+
   <header class="header">
-    <!-- <div class="header__mobile mobile">
-      <div class="mobile__close">
-        <button class="mobile__button">
-          <div class="mobile__icon"></div>
-          <div class="mobile__icon"></div>
-          <div class="mobile__icon"></div>
-        </button>
-      </div>
-      <div class="mobile__open">
-        <button class="mobile__button">
-          <div class="mobile__icon"></div>
-          <div class="mobile__icon"></div>
-          <div class="mobile__icon"></div>
-        </button>
-      </div>
-    </div> -->
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li"><a href="#" class="header__a header__a--active" title="TOP">TOP</a></li>
@@ -77,7 +70,7 @@
 
         <div class="news__container news__container--item">
           <a href="#" class="news__a" title="mahouka news">
-            <time datetime="2021-00-30" class="news__time">09.30.2021</time>
+            <time datetime="2021-09-30" class="news__time">09.30.2021</time>
             <p class="news__p">The Irregular at Magic High School: Visitor Arc Complete Blu-ray Set is coming this November!</p>
           </a>
           <a href="#" class="news__a" title="mahouka news">
@@ -136,5 +129,4 @@
   </footer>
 
 </body>
-
 </html>
