@@ -10,5 +10,6 @@ This project was built using these technologies
 
 - HTML
 - CSS
+- SASS
 - JAVASCRIPT
   
