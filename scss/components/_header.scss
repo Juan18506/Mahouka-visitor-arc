@@ -1,6 +1,7 @@
 @use '../partials/mixins' as mx;
 
 .header{
+  padding: 0 1.625em 0 9em;
   position: absolute;
   top: 1.1em;
   right: 0;
@@ -9,6 +10,7 @@
   animation: nav-entrance 60s linear;
   @include mx.media(){
     min-height: 100%;
+    padding: 0;
     top: 0;
     font-size: 1.417em;
     background-color: var(--c-black);
@@ -16,8 +18,6 @@
   }
   
   &__nav{
-    padding: 0 0.625em 0 9em;
-    margin-right: 1em;
     @include mx.media(){
       padding: 3.875rem 3.0625rem;
       margin: 0;
