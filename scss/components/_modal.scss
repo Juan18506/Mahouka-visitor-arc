@@ -1,0 +1,52 @@
+@use '../partials/mixins' as mx;
+
+.modal{
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-modal-opacity);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+
+  &__iframe{
+    width: 57.5rem;
+    height: 32.375rem;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mx.media(){
+      width: 100vw;
+      height: calc((100vw * 9) / 16);
+    }
+  }
+  &__btn{
+    width: 6em;
+    height: 6em;
+    display: block;
+    position: fixed;
+    right: 4em;
+    top: 3em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    @include mx.media(){
+      width: 3em;
+      height: 3em;
+      top: 1em;
+      right: 1em;
+    }
+
+    &:hover{
+      transform: rotate(360deg);
+    }
+  }
+  &__svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--c-white);
+  }
+
+  &--inactive{ display: none; }
+}

@@ -1,274 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Irregular at Magic High School: Visitor Arc</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js"></script>
-  </head>
-  <body class="body" id="top">
-    <header class="header">
-      <div class="header__close">
-        <svg
-          class="header__svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke="#ffffff"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="M19 5L5 19M5.00001 5L19 19"
-              stroke="#ffffff"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </g>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Irregular at Magic High School: Visitor Arc</title>
+  <meta name="description" content="Mahouka 2nd season anime web page clone">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css">
+  <script defer src="js/_dist/index.js"></script>
+</head>
+
+<body>
+
+  <div class="modal modal--inactive">
+    <iframe class="modal__iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/OWvSWvvmRS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <button class="modal__btn" title="close modal">
+      <svg class="modal__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+    </button>
+  </div>
+
+  <header class="header">
+    <div class="header__buttons buttons">
+      <button class="buttons__btn buttons__btn--close buttons__btn--inactive" title="close navegation">
+        <svg class="buttons__close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
         </svg>
-      </div>
-      <div class="header__open">
-        <div class="header__icon"></div>
-        <div class="header__icon"></div>
-        <div class="header__icon"></div>
-      </div>
-      <nav class="header__nav nav">
-        <ul class="nav__ul">
-          <li class="nav__li"><a href="#top" class="nav__a">TOP</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">NEWS</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">STREAMING</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">STAFF/CAST</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">INTRO</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">STORY</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">CHARACTER</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">MUSIC</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">KEYWORD</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">TRAILER</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">BLU-RAY</a></li>
-          <li class="nav__li">
-            <a href="#" class="nav__a"
-              ><span class="nav__span">FACEBOOK</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="main">
-      <h1 class="main__h1">
-        <img
-          src="assets/logo.png"
-          alt="mahouka logo"
-          class="main__img main__img--logo"
-        />
-      </h1>
-
-      <div class="main__ppal ppal">
-        <img
-          src="assets/kv_min.jpg"
-          alt="mahouka pv image"
-          class="ppal__img--center"
-        />
-        <img
-          src="assets/copy_1_1_pc.png"
-          alt="the premise of the mahouka second season story"
-          class="ppal__img ppal__img--text"
-        />
-      </div>
-
-      <div class="main__streaming streaming">
-        <img
-          src="assets/copy_date.png"
-          alt="now streaming logo"
-          class="streaming__img"
-        />
-        <div class="streaming__border">
-          <iframe
-            width="300"
-            height="169"
-            src="https://www.youtube.com/embed/OWvSWvvmRS8?autoplay=1&mute=1&controls=0&loop=1&playlist=OWvSWvvmRS8"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            title="YouTube video player"
-            allowfullscreen
-            class="streaming__iframe"
-          ></iframe>
-          <img
-            src="assets/btn_play.png"
-            alt="play video button"
-            class="streaming__btn"
-          />
-        </div>
-      </div>
-
-      <div class="main__news news">
-        <div class="news__container">
-          <a href="#" class="news__a news__a--news"
-            ><p class="news__p">NEWS</p></a
-          >
-
-          <div class="news__container news__container--item">
-            <a href="#" class="news__a"
-              ><time datetime="2021-00-30" class="news__time">09.30.2021</time>
-              <p class="news__p">
-                The Irregular at Magic High School: Visitor Arc Complete Blu-ray
-                Set is coming this November!
-              </p></a
-            >
-            <a href="#" class="news__a"
-              ><time datetime="2020-12-22" class="news__time">12.22.2020</time>
-              <p class="news__p">STORY has been updated!</p></a
-            >
-            <a href="#" class="news__a"
-              ><time datetime="2020-12-18" class="news__time">12.18.2020</time>
-              <p class="news__p">STORY has been updated!</p></a
-            >
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div class="modal">
-      <iframe
-        class="modal__iframe"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/OWvSWvvmRS8"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        title="YouTube video player"
-        allowfullscreen
-      ></iframe>
-
-      <div class="modal__close">
-        <svg
-          class="modal__svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke="#ffffff"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="M19 5L5 19M5.00001 5L19 19"
-              stroke="#ffffff"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </g>
-        </svg>
-      </div>
+      </button>
+      <button class="buttons__btn buttons__btn--open" title="open navegation">
+        <div class="buttons__open"></div>
+        <div class="buttons__open"></div>
+        <div class="buttons__open"></div>
+      </button>
     </div>
 
-    <div class="banner">
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img
-          src="assets/bnr_tv01.jpg"
-          alt="mahouka first season banner"
-          class="banner__img"
-      /></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img
-          src="assets/bnr_movie.jpg"
-          alt="mahouka first movie banner"
-          class="banner__img"
-      /></a>
-    </div>
-
-    <footer class="footer">
-      <div class="footer__background">
-        <img
-          src="assets/bg_circle_footer.gif"
-          alt="a circle gif"
-          class="footer__img"
-        />
-      </div>
-
-      <ul class="footer__ul">
-        <li class="footer__li"><span class="footer__span">SHARE</span></li>
-        <li class="footer__li">
-          <a href="#" class="footer__a">
-            <svg
-              class="footer__svg"
-              xmlns="http://www.w3.org/2000/svg"
-              width="61.218"
-              height="49.18"
-              viewBox="0 0 61.218 49.18"
-            >
-              <defs>
-                <style>
-                  .cls-1 {
-                    fill: #fff;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path
-                id="sns_tw"
-                class="cls-1"
-                d="M362.4,2008.72h0m-18.829-5.82a12.427,12.427,0,0,0-12.231,15.25,35.768,35.768,0,0,1-25.88-12.98,12.355,12.355,0,0,0,3.886,16.59,12.69,12.69,0,0,1-5.687-1.56c0,0.05,0,.11,0,0.16a12.461,12.461,0,0,0,10.072,12.18,12.87,12.87,0,0,1-3.308.43,12.278,12.278,0,0,1-2.363-.22,12.549,12.549,0,0,0,11.73,8.63,25.374,25.374,0,0,1-15.594,5.31,26.89,26.89,0,0,1-3-.17,35.853,35.853,0,0,0,19.247,5.58c23.095,0,35.724-18.93,35.724-35.34,0-.54-0.012-1.07-0.036-1.61a25.357,25.357,0,0,0,6.265-6.43,25.234,25.234,0,0,1-7.211,1.96,12.494,12.494,0,0,0,5.521-6.87,25.215,25.215,0,0,1-7.974,3.01,12.615,12.615,0,0,0-9.165-3.92"
-                transform="translate(-301.188 -2002.91)"
-              />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__li">
-          <a href="#" class="footer__a">
-            <svg
-              class="footer__svg"
-              xmlns="http://www.w3.org/2000/svg"
-              width="57.187"
-              height="56.38"
-              viewBox="0 0 57.187 56.38"
-            >
-              <defs>
-                <style>
-                  .cls-1 {
-                    fill: #fff;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path
-                id="sns_fb"
-                class="cls-1"
-                d="M468.788,2027.67a28.595,28.595,0,1,0-33.062,28.03v-19.83h-7.26v-8.2h7.26v-6.25c0-7.11,4.269-11.04,10.8-11.04a43.852,43.852,0,0,1,6.4.56v6.98h-3.606c-3.552,0-4.659,2.19-4.659,4.43v5.32h7.93l-1.268,8.2h-6.662v19.83A28.453,28.453,0,0,0,468.788,2027.67Z"
-                transform="translate(-411.594 -1999.31)"
-              />
-            </svg>
-          </a>
-        </li>
+    <nav class="header__nav header__nav--inactive">
+      <ul class="header__ul">
+        <li class="header__li"><a href="#" class="header__a header__a--active" title="TOP">TOP</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="NEWS">NEWS</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="STREAMING">STREAMING</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="STAFF/CAST">STAFF/CAST</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="INTRO">INTRO</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="STORY">STORY</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="CHARACTER">CHARACTER</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="MUSIC">MUSIC</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="KEYWORD">KEYWORD</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="TRAILER">TRAILER</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="BLU-RAY">BLU-RAY</a></li>
+        <li class="header__li"><a href="#" class="header__a" title="FACEBOOK">FACEBOOK</a></li>
       </ul>
+    </nav>
+  </header>
 
-      <div class="footer__wrapper wrapper">
-        <div class="wrapper__text">
-          <a href="#" class="wrapper__a">JAPANESE</a>
-          <a href="#" class="wrapper__a">ANIPLEX OF AMERICA</a>
+  <main class="main">
+    
+    <section class="main__hero hero">
+      <h1 class="hero__h1"><img src="assets/logo.webp" alt="mahouka logo" class="hero__img hero__img--logo" loading="lazy" /></h1>
+      <img class="hero__img hero__img--center" src="assets/kv_min.webp" alt="mahouka pv image" loading="lazy" />
+      <img class="hero__img hero__img--text" src="assets/copy_1_1_pc.webp" alt="the premise of the mahouka second season story" loading="lazy" />
+
+      <div class="hero__streaming streaming">
+        <img src="assets/copy_date.webp" alt="now streaming" class="streaming__img" loading="lazy" />
+        <div class="streaming__border">
+          <iframe class="streaming__iframe" width="560" height="315"
+            src="https://www.youtube.com/embed/OWvSWvvmRS8?autoplay=1&mute=1&controls=0&loop=1&playlist=OWvSWvvmRS8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <img src="assets/btn_play.webp" alt="play video button" class="streaming__btn" loading="lazy"/>
         </div>
-        <p class="wrapper__p">
-          ©2019 Tsutomu Sato/KADOKAWA CORPORATION/MAGIC HIGH SCHOOL 2 COMMITTEE
-        </p>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <div class="main__news news">
+      <div class="news__container">
+        <a href="#" class="news__a news__a--news" title="NEWS"><p class="news__p">NEWS</p></a>
+
+        <div class="news__container news__container--item">
+          <a href="#" class="news__a" title="mahouka news">
+            <time datetime="2021-09-30" class="news__time">09.30.2021</time>
+            <p class="news__p">The Irregular at Magic High School: Visitor Arc Complete Blu-ray Set is coming this November!</p>
+          </a>
+          <a href="#" class="news__a" title="mahouka news">
+            <time datetime="2020-12-22" class="news__time">12.22.2020</time>
+            <p class="news__p">STORY has been updated!</p>
+          </a>
+          <a href="#" class="news__a" title="mahouka news">
+            <time datetime="2020-12-18" class="news__time">12.18.2020</time>
+            <p class="news__p">STORY has been updated!</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="banner">
+    <a href="https://mahouka.us/1st/" target="_blank" rel="noopener noreferrer" title="mahouka first season web page">
+      <img src="assets/bnr_tv01.webp" alt="mahouka first season banner" class="banner__img" loading="lazy"/>
+    </a>
+    <a href="https://mahouka.us/movie/" target="_blank" rel="noopener noreferrer" title="mahouka first movie web page">
+      <img src="assets/bnr_movie.webp" alt="mahouka first movie banner" class="banner__img" loading="lazy"/>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__background">
+      <img class="footer__img" src="assets/bg_circle_footer.gif" alt="a mahouka themed circle gif"/>
+    </div>
+
+    <ul class="footer__ul">
+      <li class="footer__li"><span class="footer__span">SHARE</span></li>
+      <li class="footer__li">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmahouka.us%2F" class="footer__a" title="share on facebook" target="_blank" rel="noopener noreferrer">
+          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__li">
+        <a href="https://twitter.com/intent/tweet?text=A%20battle%20between%20the%20most%20powerful%20brother%20and%20sister%20duo%20and%20the%20undefeated%20visitor.%20%0APremieres%20October%203rd%2C%202020%20on%20Funimation!%0A%0Ahttps%3A%2F%2Fmahouka.us%2F2nd%2F" class="footer__a" title="share on twitter" target="_blank" rel="noopener noreferrer">
+          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer__wrapper wrapper">
+      <div class="wrapper__text">
+        <a href="https://mahouka.jp/" class="wrapper__a" title="mahouka main website" target="_blank" rel="noopener noreferrer">JAPANESE</a>
+        <a href="https://aniplexusa.com/" class="wrapper__a" title="aniplex web page" target="_blank" rel="noopener noreferrer">ANIPLEX OF AMERICA</a>
+      </div>
+      <p class="wrapper__p">©2019 Tsutomu Sato/KADOKAWA CORPORATION/MAGIC HIGH SCHOOL 2 COMMITTEE</p>
+    </div>
+  </footer>
+
+</body>
 </html>

@@ -1,0 +1,23 @@
+@use '../partials/mixins' as mx;
+
+.banner{
+  padding: 1.5em 0;
+  @include mx.flex(row, nowrap, center, center);
+  gap: 1.5em;
+  background-color: var(--c-grey);
+  @include mx.media(){
+    padding: 2.125em 0;
+  }
+
+  &__img{
+    width: 13.75em;
+    height: 100%;
+    transition: all 0.5s ease;
+    @include mx.media(){
+      max-width: 9.375em;
+      height: 100%;
+    }
+
+    &:hover{ opacity: var(--opacity); }
+  }
+}

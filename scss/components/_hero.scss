@@ -1,0 +1,175 @@
+@use '../partials/mixins' as mx;
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  background: url(../../assets/kv.webp) 50% 92.5% / 110%;
+  animation: slider-hero 60s linear;
+  @include mx.media(){
+    height: fit-content;
+    position: static;
+    background: none;
+    animation: none;
+  }
+  
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--c-bg-opacity);
+    animation: after-entrance 60s ease-in-out;
+    @include mx.media(){
+      display: none;
+      animation: none;
+    }
+  }
+  
+  &__h1{
+    width: 12em;
+    height: 20em;
+    position: relative;
+    animation: opacity-entrance 1s linear;
+    @include mx.media(){
+      width: 60%;
+      height: 70%;
+      position: absolute;
+      animation: none;
+    }
+  }
+  &__img{
+    position: absolute;
+    pointer-events: none;
+    
+    &--logo{
+      top: 1.5em;
+      left: 1.5em;
+      z-index: 3;
+      @include mx.media(){
+        top: 20%;
+        left: 30%;
+        content: url(../../assets/logo_sp.webp);
+      }
+    }
+    &--center{
+      width: auto;
+      height: 100vh;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      animation: opacity-entrance 3.5s linear;
+      @include mx.media(){
+        width: 100vw;
+        height: calc((100vw * 1500) / 1059);
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        animation: none;
+      }
+    }
+    &--text{
+      width: 32em;
+      height: 7em;
+      margin-top: 2em;
+      top: 4em;
+      right: 2em;
+      z-index: 3;
+      animation: text-img-entrance 60s linear;
+      @include mx.media(){ 
+        display: none;
+        animation: none;
+      }
+    }
+  }
+  &__streaming{
+    max-width: 15em;
+    height: auto;
+    margin-left: 1.5em;
+    position: absolute;
+    bottom: 30%;
+    left: 0.5em;
+    z-index: 3;
+    pointer-events: none;
+    animation: streaming-entrance 60s linear;
+    @include mx.media(){
+      max-width: none;
+      margin: 0;
+      padding: 0 0 2em 0;
+      @include mx.flex(column, nowrap, center, center);
+      position: static;
+      background-color: var(--c-black);
+      animation: none;
+    }
+  }
+}
+
+.streaming{
+  &__img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5em;
+    @include mx.media(){ padding: 2em 1em;}
+  }
+  &__border{
+    width: 15.0625em;
+    height: 8.4727em;
+    position: relative;
+    z-index: 1;
+    pointer-events: all;
+    @include mx.media(){
+      width: 100vw;
+      height: auto;
+    }
+
+    &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: var(--c-bg-opacity);
+      border: 1px solid var(--c-white);
+      cursor: pointer;
+      transition: all 0.5s ease;
+      @include mx.media(){ border: 0; }
+    }
+    &:hover::after{
+      background-color: var(--c-bg-nopacity);
+      border-color: var(--c-blue);
+    }
+  }
+  &__iframe{ 
+    width: 100%;
+    height: 100%;
+    @include mx.media(){
+      width: 100vw;
+      height: calc((100vw * 9) / 16);
+    }
+  }
+  &__btn{
+    width: 1.875em;
+    height: 1.875em;
+    margin: 0.75em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    pointer-events: none;
+    @include mx.media(){
+      width: 10vw;
+      height: auto;
+      bottom: 0.5em;
+      right: 0.5em;
+    }
+  }
+}
