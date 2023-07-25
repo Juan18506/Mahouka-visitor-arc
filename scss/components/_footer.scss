@@ -8,6 +8,12 @@
   z-index: 0;
   overflow: hidden;
   background-color: var(--c-black);
+  @include mx.media(){
+    padding: 2.5em 0 3.4375em;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+  }
 
   &__background{
     position: absolute;
@@ -22,6 +28,7 @@
   &__ul{
     @include mx.flex(row, nowrap, center, center);
     gap: 1em;
+    @include mx.media(){ gap: 1.5em; }
   }
   &__li{ color: var(--c-white); }
   &__span{
@@ -31,6 +38,7 @@
     font-size: 0.65em;
     font-weight: bold;
     cursor: default;
+    @include mx.media(){ margin: 0; }
   }
   &__a{}
   &__svg{
@@ -43,6 +51,10 @@
   &__wrapper{
     @include mx.flex(column, nowrap, center, flex-end);
     gap: 0.75em;
+    @include mx.media(){
+      align-items: center;
+      gap: 1em;
+    }
   }
 }
 
@@ -55,6 +67,7 @@
     font-size: 0.875em;
     color: var(--c-white);
     transition: all 0.5s ease;
+    @include mx.media(){ font-size: 0.8em; }
 
     &:hover{ opacity: var(--opacity); }
   }
@@ -62,5 +75,9 @@
     font-size: 0.75em;
     color: var(--c-lightgrey);
     text-align: center;
+    @include mx.media(){
+      padding: 0 1em;
+      font-size: 0.7em;
+    }
   }
 }

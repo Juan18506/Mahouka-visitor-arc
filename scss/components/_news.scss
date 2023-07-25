@@ -4,17 +4,26 @@
   width: 100%;
   height: 12em;
   background-color: var(--c-black);
+  @include mx.media(){
+    height: auto;
+    padding: 2em 0;
+  }
 
   &__container{
     width: 100%;
     height: 100%;
     @include mx.flex(row, nowrap, center, center);
     gap: 2em;
+    @include mx.media(){
+      flex-direction: column;
+      gap: 1em;
+    }
 
     &--item{
       width: auto;
       height: auto;
       gap: 1.5em;
+      @include mx.media(){ gap: 1em; }
     }
   }
   &__a{
@@ -27,6 +36,9 @@
     background-color: var(--c-white);
     color: var(--c-black);
     transition: all 0.5s ease;
+    @include mx.media(){
+      width: 90%;
+    }
     
     &:hover{ color: var(--c-blue); }
 
@@ -40,6 +52,11 @@
       font-size: 1em;
       background-color: var(--c-black);
       color: var(--c-white);
+      @include mx.media(){
+        width: 90%;
+        height: auto;
+        padding: 1.25em;
+      }
     
       &:hover{ color: var(--c-white); }
     }
