@@ -64,7 +64,7 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      animation: opacity-entrance 3s linear;
+      animation: center-img-entrance 3.75s linear;
       @include mx.media(){
         width: 100vw;
         height: calc((100vw * 1500) / 1059);
