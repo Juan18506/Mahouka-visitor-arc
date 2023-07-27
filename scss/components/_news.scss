@@ -20,10 +20,14 @@
     }
 
     &--item{
-      width: 100%;
-      height: 100%;
+      width: auto;
+      height: auto;
       gap: 1.5em;
-      @include mx.media(){ gap: 1em; }
+      @include mx.media(){ 
+        width: 100%;
+        height: 100%;
+        gap: 1em; 
+      }
     }
   }
   &__a{
