@@ -1,8 +1,8 @@
-# Mahouka visitor arc web clone
+# Mahouka visitor arc Landing Page copycat
 
-Original web page: https://mahouka.us/2nd/
+Original Landing Page: https://mahouka.us/2nd/
 
-My web page: https://mahouka2ndclone.netlify.app
+My copycat: https://mahouka2ndcopycat.netlify.app/
 
 ## Build with
 
