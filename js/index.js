@@ -1,11 +1,13 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const headerNav = document.querySelector('.header__nav')
+  const header = document.querySelector('.header')
+  const headerNav = header.querySelector('.header__nav')
   const headerAnchors = headerNav.querySelectorAll('.header__a')
-  const headerButtons = document.querySelector('.header__buttons')
+  const headerButtons = header.querySelector('.header__buttons')
   const btnClose = headerButtons.querySelector('.buttons__btn--close')
   const btnOpen = headerButtons.querySelector('.buttons__btn--open')
+  const centeredImg = document.querySelector('.hero__img--center')
   const modal = document.querySelector('.modal')
   const modalBtn = modal.querySelector('.modal__btn')
   const iframe = modal.querySelector('.modal__iframe')
@@ -42,16 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  centeredImg.addEventListener('animationend', handleIframes)
+
   headerAnchors.forEach((anchor) => {
     anchor.addEventListener('click', handleHeaderAnchors)
   })
 
-  const headerBtnArray = [btnOpen, btnClose]
-  headerBtnArray.forEach(btn => btn.addEventListener('click', handleHeaderButtons))
+  const headerBtnsArray = [btnOpen, btnClose]
+  headerBtnsArray.forEach(btn => btn.addEventListener('click', handleHeaderButtons))
 
   const modalChangingElements = [streamingIframe, modalBtn]
   modalChangingElements.forEach((e) =>
     e.addEventListener('click', handleIframes)
   )
-
 })

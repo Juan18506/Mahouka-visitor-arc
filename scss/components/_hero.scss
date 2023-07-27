@@ -64,14 +64,14 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      animation: opacity-entrance 3.5s linear;
+      animation: opacity-entrance 3s linear;
       @include mx.media(){
         width: 100vw;
         height: calc((100vw * 1500) / 1059);
         position: relative;
         background-size: cover;
         background-position: center;
-        animation: none;
+        animation: after-entrance 1s 1 ease;
       }
     }
     &--text{

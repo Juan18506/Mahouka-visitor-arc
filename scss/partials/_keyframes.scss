@@ -54,16 +54,17 @@
 @keyframes nav-entrance{
   from {
     opacity: 0;
+    padding-right: 0;
   }
   3.4% {
     opacity: 0;
   }
   3.5% {
-    padding: 0;
+    padding-right: 0;
     opacity: 1;
   }
   4% {
-    padding: 0em 1.625em 0em 9em;
+    padding-right: 1em;
   }
 }
 
