@@ -7,9 +7,9 @@
   right: 0;
   z-index: 4;
   background: linear-gradient(90deg, rgba(108, 108, 108, 0) 0%, rgba(0, 0, 0, 1) 11%);
-  animation: nav-entrance 60s linear;
+  animation: nav-entrance 3.5s ease;
   @include mx.media(){
-    height: 100dvh;
+    height: 100vh;
     padding-right: 0;
     top: 0;
     overflow-y: scroll;

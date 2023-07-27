@@ -13,7 +13,7 @@
     background: none;
     animation: none;
   }
-  
+
   &::after{
     content: '';
     width: 100%;
@@ -24,7 +24,7 @@
     left: 0;
     z-index: 1;
     background-color: var(--c-bg-opacity);
-    animation: after-entrance 60s ease-in-out;
+    animation: after-entrance 3s ease;
     @include mx.media(){
       display: none;
       animation: none;
@@ -35,7 +35,7 @@
     width: 12em;
     height: 20em;
     position: relative;
-    animation: opacity-entrance 1s linear;
+    animation: opacity-entrance 1.5s ease;
     @include mx.media(){
       width: 60%;
       height: 70%;
@@ -64,14 +64,14 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      animation: center-img-entrance 3.75s linear;
+      animation: opacity-entrance 3.5s ease;
       @include mx.media(){
         width: 100vw;
         height: calc((100vw * 1500) / 1059);
         position: relative;
         background-size: cover;
         background-position: center;
-        animation: after-entrance 1s 1 ease;
+        animation: after-entrance 8s 2s ease;
       }
     }
     &--text{
@@ -81,7 +81,7 @@
       top: 4em;
       right: 2em;
       z-index: 3;
-      animation: text-img-entrance 60s linear;
+      animation: text-img-entrance 3.5s ease;
       @include mx.media(){ 
         display: none;
         animation: none;
@@ -97,7 +97,7 @@
     left: 0.5em;
     z-index: 3;
     pointer-events: none;
-    animation: streaming-entrance 60s linear;
+    animation: streaming-entrance 3.5s ease;
     @include mx.media(){
       max-width: none;
       margin: 0;
