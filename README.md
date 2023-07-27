@@ -2,7 +2,7 @@
 
 Original Landing Page: https://mahouka.us/2nd/
 
-My copycat: mahouka2ndcopycat.netlify.app
+My copycat: https://mahouka2ndcopycat.netlify.app/
 
 ## Build with
 
