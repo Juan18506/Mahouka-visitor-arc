@@ -9,10 +9,10 @@
   background: linear-gradient(90deg, rgba(108, 108, 108, 0) 0%, rgba(0, 0, 0, 1) 11%);
   animation: nav-entrance 3.5s ease;
   @include mx.media(){
-    height: 100vh;
+    height: 100dvh;
     padding-right: 0;
     top: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     font-size: 1.417em;
     background-color: var(--c-black);
     animation: none;
