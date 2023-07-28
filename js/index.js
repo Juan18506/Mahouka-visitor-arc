@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnClose.classList.add('buttons__btn--inactive')
     }
   }
-  const handleIframes = () => {
+  const handleIframe = () => {
     if (modal.classList.contains('modal--inactive')) {
       modal.classList.remove('modal--inactive')
     } else {
@@ -44,17 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  centeredImg.addEventListener('animationend', handleIframes)
+  centeredImg.addEventListener('animationend', handleIframe)
 
   headerAnchors.forEach((anchor) => {
     anchor.addEventListener('click', handleHeaderAnchors)
   })
 
-  const headerBtnsArray = [btnOpen, btnClose]
-  headerBtnsArray.forEach(btn => btn.addEventListener('click', handleHeaderButtons))
+  const headerButtonsArray = [btnOpen, btnClose]
+  headerButtonsArray.forEach(btn => btn.addEventListener('click', handleHeaderButtons))
 
   const modalChangingElements = [streamingIframe, modalBtn]
   modalChangingElements.forEach((e) =>
-    e.addEventListener('click', handleIframes)
+    e.addEventListener('click', handleIframe)
   )
 })

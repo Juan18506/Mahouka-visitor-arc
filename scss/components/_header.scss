@@ -81,21 +81,16 @@
     &--open{
       display: none;
       @include mx.media(){
-        padding: 1rem;
-        @include mx.flex(column, nowrap, space-around, center);
-        gap: 0.25rem;
+        padding: 0.5rem;
+        @include mx.flex(column, nowrap, center, center);
+        color: var(--c-white);
       }
     }
     &--inactive{ display: none; }
   }
-  &__close{
+  &__svg{
     width: 100%;
     height: auto;
-  }
-  &__open{
-    width: 2rem;
-    height: 3px;
-    background-color: var(--c-white);
-    pointer-events: none;
+    fill: var(--c-white);
   }
 }
