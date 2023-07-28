@@ -54,6 +54,7 @@
       align-items: center;
       border: 1px solid var(--c-white);
       font-size: 1em;
+      text-transform: uppercase;
       background-color: var(--c-black);
       color: var(--c-white);
       @include mx.media(){
