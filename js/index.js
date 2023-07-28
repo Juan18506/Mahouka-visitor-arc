@@ -22,18 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anchor.classList.add('header__a--active')
   }
-  const handleHeaderButtons = (event) => {
-    const { target: btn } = event
-  
-    if (btn.classList.contains('buttons__btn--open')) {
-      headerNav.classList.remove('header__nav--inactive')
-      btnOpen.classList.add('buttons__btn--inactive')
-      btnClose.classList.remove('buttons__btn--inactive')
-    } else {
-      headerNav.classList.add('header__nav--inactive')
-      btnOpen.classList.remove('buttons__btn--inactive')
-      btnClose.classList.add('buttons__btn--inactive')
-    }
+  const handleHeaderButtons = () => {  
+    headerNav.classList.toggle('header__nav--inactive')
+    btnOpen.classList.toggle('buttons__btn--inactive')
+    btnClose.classList.toggle('buttons__btn--inactive')
   }
   const handleIframe = () => {
     if (modal.classList.contains('modal--inactive')) {
