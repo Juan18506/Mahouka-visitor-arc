@@ -13,11 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const iframe = modal.querySelector('.modal__iframe')
   const streamingIframe = document.querySelector('.streaming__border')
 
-  const handleHeaderAnchors = (event) => {
-    const { target: anchor } = event
-
-    headerAnchors.forEach((anchor) => {
-      anchor.classList.remove('header__a--active')
+  const handleHeaderAnchor = (anchor) => {
+    headerAnchors.forEach((a) => {
+      a.classList.remove('header__a--active')
     })
 
     anchor.classList.add('header__a--active')
@@ -34,16 +32,23 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add('modal--inactive')
       iframe.src = iframe.src
     }
+
+    centeredImg.removeEventListener('animationend', handleIframe)
   }
 
   centeredImg.addEventListener('animationend', handleIframe)
 
-  headerAnchors.forEach((anchor) => {
-    anchor.addEventListener('click', handleHeaderAnchors)
+  headerNav.addEventListener('click', (event) => {
+    const { target } = event
+
+    if (!target.classList.contains('header__a')) {
+      return
+    }
+
+    handleHeaderAnchor(target)
   })
 
-  const headerButtonsArray = [btnOpen, btnClose]
-  headerButtonsArray.forEach(btn => btn.addEventListener('click', handleHeaderButtons))
+  headerButtons.addEventListener('click', handleHeaderButtons)
 
   const modalChangingElements = [streamingIframe, modalBtn]
   modalChangingElements.forEach((e) =>
