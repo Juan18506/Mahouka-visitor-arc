@@ -39,12 +39,14 @@
     font-size: 0.75em;
     background-color: var(--c-white);
     color: var(--c-black);
-    transition: all 0.5s ease;
+    transition: all 200ms ease;
     @include mx.media(){
       width: 90%;
     }
     
-    &:hover{ color: var(--c-blue); }
+    &:hover{ 
+      color: var(--c-blue); 
+    }
 
     &--news{
       width: 7.5rem;
@@ -63,7 +65,9 @@
         padding: 1.25em;
       }
     
-      &:hover{ color: var(--c-white); }
+      &:hover{ 
+        color: var(--c-white); 
+      }
     }
   }
   &__p{}

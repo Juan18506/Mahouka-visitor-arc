@@ -20,7 +20,7 @@
     top: -30;
     left: -335px;
     z-index: -1;
-    animation: rotate-circle 90s infinite linear;
+    animation: rotate360 90s infinite linear;
   }
   &__img{
     width: 100%;
@@ -29,9 +29,13 @@
   &__ul{
     @include mx.flex(row, nowrap, center, center);
     gap: 1em;
-    @include mx.media(){ gap: 1.5em; }
+    @include mx.media(){ 
+      gap: 1.5em;
+    }
   }
-  &__li{ color: var(--c-white); }
+  &__li{ 
+    color: var(--c-white); 
+  }
   &__span{
     margin-right: 1em;
     padding-bottom: 1px;
@@ -40,15 +44,19 @@
     text-transform: uppercase;
     font-weight: bold;
     cursor: default;
-    @include mx.media(){ margin: 0; }
+    @include mx.media(){ 
+      margin: 0; 
+    }
   }
   &__a{}
   &__svg{
     width: 1.5625em;
     height: 1.5625em;
-    transition: all 0.5s ease;
+    transition: all 200ms ease;
 
-    &:hover{ opacity: var(--opacity) }
+    &:hover{ 
+      opacity: var(--opacity) 
+    }
   }
   &__wrapper{
     @include mx.flex(column, nowrap, center, flex-end);
@@ -68,11 +76,13 @@
   &__a{
     font-size: 0.875em;
     color: var(--c-white);
-    transition: all 0.5s ease;
+    transition: all 200ms ease;
     text-transform: uppercase;
     @include mx.media(){ font-size: 0.8em; }
 
-    &:hover{ opacity: var(--opacity); }
+    &:hover{ 
+      opacity: var(--opacity); 
+    }
   }
   &__p{
     font-size: 0.75em;

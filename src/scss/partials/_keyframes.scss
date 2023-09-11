@@ -1,4 +1,4 @@
-@keyframes slider-hero{
+@keyframes slideDown{
   from{
     background-position-y: 0%;
     filter: blur(6em);
@@ -11,7 +11,7 @@
   }
 }
 
-@keyframes after-entrance{
+@keyframes opacityBgIn{
   from, 50%{
     background-color: rgb(0, 0, 0, 0);
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@keyframes opacity-entrance{
+@keyframes opacityIn{
   from, 50% {
     opacity: 0;
   }
@@ -29,7 +29,7 @@
   }
 }
 
-@keyframes text-img-entrance{
+@keyframes fadeInRight{
   from, 50%{
     opacity: 0;
     margin-top: 0;
@@ -40,7 +40,7 @@
   }
 }
 
-@keyframes nav-entrance{
+@keyframes fadeInLeft{
   from, 50%{
     opacity: 0;
     padding-right: 0;
@@ -51,7 +51,7 @@
   }
 }
 
-@keyframes streaming-entrance{
+@keyframes fadeInRight{
   from, 50%{
     opacity: 0;
     margin-left: 0;
@@ -62,7 +62,7 @@
   }
 }
 
-@keyframes rotate-circle{
+@keyframes rotate360{
   from {
     transform: rotate(0deg);
   }

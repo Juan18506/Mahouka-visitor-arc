@@ -13,7 +13,7 @@
   --secondary-fonts: Verdana;
 }
 
-@keyframes slider-hero {
+@keyframes slideDown {
   from {
     background-position-y: 0%;
     filter: blur(6em);
@@ -25,7 +25,7 @@
     background-position-y: 92.5%;
   }
 }
-@keyframes after-entrance {
+@keyframes opacityBgIn {
   from, 50% {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -33,7 +33,7 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-@keyframes opacity-entrance {
+@keyframes opacityIn {
   from, 50% {
     opacity: 0;
   }
@@ -41,7 +41,7 @@
     opacity: 1;
   }
 }
-@keyframes text-img-entrance {
+@keyframes fadeInRight {
   from, 50% {
     opacity: 0;
     margin-top: 0;
@@ -51,7 +51,7 @@
     margin-top: 2em;
   }
 }
-@keyframes nav-entrance {
+@keyframes fadeInLeft {
   from, 50% {
     opacity: 0;
     padding-right: 0;
@@ -61,7 +61,7 @@
     padding-right: 1em;
   }
 }
-@keyframes streaming-entrance {
+@keyframes fadeInRight {
   from, 50% {
     opacity: 0;
     margin-left: 0;
@@ -71,7 +71,7 @@
     margin-left: 1.5em;
   }
 }
-@keyframes rotate-circle {
+@keyframes rotate360 {
   from {
     transform: rotate(0deg);
   }
@@ -200,7 +200,7 @@ body {
   right: 4em;
   top: 3em;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 200ms ease;
 }
 @media screen and (max-width: 750px) {
   .modal__btn {
@@ -211,7 +211,7 @@ body {
   }
 }
 .modal__btn:hover {
-  transform: rotate(360deg);
+  transform: rotate(180deg);
 }
 .modal__svg {
   width: 100%;
@@ -229,7 +229,7 @@ body {
   right: 0;
   z-index: 4;
   background: linear-gradient(90deg, rgba(108, 108, 108, 0) 0%, rgb(0, 0, 0) 11%);
-  animation: nav-entrance 3.5s ease;
+  animation: fadeInLeft 3.5s ease;
 }
 @media screen and (max-width: 750px) {
   .header {
@@ -280,7 +280,7 @@ body {
   letter-spacing: 0.15em;
   white-space: nowrap;
   color: var(--c-white);
-  transition: all 0.5s ease;
+  transition: all 200ms ease;
 }
 @media screen and (max-width: 750px) {
   .header__a {
@@ -350,7 +350,7 @@ body {
   position: relative;
   z-index: 0;
   background: url("/kv.webp") 50% 92.5%/110%;
-  animation: slider-hero 60s linear;
+  animation: slideDown 60s linear;
 }
 @media screen and (max-width: 750px) {
   .hero {
@@ -370,7 +370,7 @@ body {
   left: 0;
   z-index: 1;
   background-color: var(--c-bg-opacity);
-  animation: after-entrance 3s ease;
+  animation: opacityBgIn 3s ease;
 }
 @media screen and (max-width: 750px) {
   .hero::after {
@@ -382,7 +382,7 @@ body {
   width: 12em;
   height: 20em;
   position: relative;
-  animation: opacity-entrance 1.5s ease;
+  animation: opacityIn 1.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__h1 {
@@ -415,7 +415,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  animation: opacity-entrance 3.5s ease;
+  animation: opacityIn 3.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__img--center {
@@ -424,7 +424,7 @@ body {
     position: relative;
     background-size: cover;
     background-position: center;
-    animation: after-entrance 2s ease;
+    animation: opacityBgIn 2s ease;
   }
 }
 .hero__img--text {
@@ -434,7 +434,7 @@ body {
   top: 4em;
   right: 2em;
   z-index: 3;
-  animation: text-img-entrance 3.5s ease;
+  animation: fadeinRight 3.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__img--text {
@@ -451,7 +451,7 @@ body {
   left: 0.5em;
   z-index: 3;
   pointer-events: none;
-  animation: streaming-entrance 3.5s ease;
+  animation: fadeInRight 3.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__streaming {
@@ -503,7 +503,7 @@ body {
   background-color: var(--c-bg-opacity);
   border: 1px solid var(--c-white);
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 300ms ease;
 }
 @media screen and (max-width: 750px) {
   .streaming__border::after {
@@ -593,7 +593,7 @@ body {
   font-size: 0.75em;
   background-color: var(--c-white);
   color: var(--c-black);
-  transition: all 0.5s ease;
+  transition: all 200ms ease;
 }
 @media screen and (max-width: 750px) {
   .news__a {
@@ -650,7 +650,7 @@ body {
 .banner__img {
   width: 13.75em;
   height: 100%;
-  transition: all 0.5s ease;
+  transition: all 200ms ease;
 }
 @media screen and (max-width: 750px) {
   .banner__img {
@@ -687,7 +687,7 @@ body {
   top: -30;
   left: -335px;
   z-index: -1;
-  animation: rotate-circle 90s infinite linear;
+  animation: rotate360 90s infinite linear;
 }
 .footer__img {
   width: 100%;
@@ -725,7 +725,7 @@ body {
 .footer__svg {
   width: 1.5625em;
   height: 1.5625em;
-  transition: all 0.5s ease;
+  transition: all 200ms ease;
 }
 .footer__svg:hover {
   opacity: var(--opacity);
@@ -754,7 +754,7 @@ body {
 .wrapper__a {
   font-size: 0.875em;
   color: var(--c-white);
-  transition: all 0.5s ease;
+  transition: all 200ms ease;
   text-transform: uppercase;
 }
 @media screen and (max-width: 750px) {
@@ -775,8 +775,4 @@ body {
     padding: 0 1em;
     font-size: 0.7em;
   }
-}
-
-body {
-  position: relative;
 }

@@ -30,7 +30,7 @@
     right: 4em;
     top: 3em;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 200ms ease;
     @include mx.media(){
       width: 3em;
       height: 3em;
@@ -39,7 +39,7 @@
     }
 
     &:hover{
-      transform: rotate(360deg);
+      transform: rotate(180deg);
     }
   }
   &__svg{
@@ -48,5 +48,7 @@
     fill: var(--c-white);
   }
 
-  &--inactive{ display: none; }
+  &--inactive{ 
+    display: none; 
+  }
 }

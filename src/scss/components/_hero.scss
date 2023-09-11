@@ -6,7 +6,7 @@
   position: relative;
   z-index: 0;
   background: url('/kv.webp') 50% 92.5% / 110%;
-  animation: slider-hero 60s linear;
+  animation: slideDown 60s linear;
   @include mx.media(){
     height: fit-content;
     position: static;
@@ -24,7 +24,7 @@
     left: 0;
     z-index: 1;
     background-color: var(--c-bg-opacity);
-    animation: after-entrance 3s ease;
+    animation: opacityBgIn 3s ease;
     @include mx.media(){
       display: none;
       animation: none;
@@ -35,7 +35,7 @@
     width: 12em;
     height: 20em;
     position: relative;
-    animation: opacity-entrance 1.5s ease;
+    animation: opacityIn 1.5s ease;
     @include mx.media(){
       width: 60%;
       height: 70%;
@@ -64,14 +64,14 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      animation: opacity-entrance 3.5s ease;
+      animation: opacityIn 3.5s ease;
       @include mx.media(){
         width: 100vw;
         height: calc((100vw * 1500) / 1059);
         position: relative;
         background-size: cover;
         background-position: center;
-        animation: after-entrance 2s ease;
+        animation: opacityBgIn 2s ease;
       }
     }
     &--text{
@@ -81,7 +81,7 @@
       top: 4em;
       right: 2em;
       z-index: 3;
-      animation: text-img-entrance 3.5s ease;
+      animation: fadeinRight 3.5s ease;
       @include mx.media(){ 
         display: none;
         animation: none;
@@ -97,7 +97,7 @@
     left: 0.5em;
     z-index: 3;
     pointer-events: none;
-    animation: streaming-entrance 3.5s ease;
+    animation: fadeInRight 3.5s ease;
     @include mx.media(){
       max-width: none;
       margin: 0;
@@ -115,7 +115,9 @@
     width: 100%;
     height: 100%;
     margin-bottom: 0.5em;
-    @include mx.media(){ padding: 2em 1em;}
+    @include mx.media(){ 
+      padding: 2em 1em;
+    }
   }
   &__border{
     width: 15.0625em;
@@ -140,8 +142,10 @@
       background-color: var(--c-bg-opacity);
       border: 1px solid var(--c-white);
       cursor: pointer;
-      transition: all 0.5s ease;
-      @include mx.media(){ border: 0; }
+      transition: all 300ms ease;
+      @include mx.media(){ 
+        border: 0; 
+      }
     }
     &:hover::after{
       background-color: var(--c-bg-nopacity);
