@@ -1,13 +1,13 @@
 @keyframes slider-hero{
   from{
-    background: url(../assets/kv.webp) 50% 0% / 110%;
+    background-position-y: 0%;
     filter: blur(6em);
   }
   2%{
     filter: blur(0);
   }
   to{
-    background: url(../assets/kv.webp) 50% 92.5% / 110%;
+    background-position-y: 92.5%;
   }
 }
 
