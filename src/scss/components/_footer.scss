@@ -78,7 +78,9 @@
     color: var(--c-white);
     transition: all 200ms ease;
     text-transform: uppercase;
-    @include mx.media(){ font-size: 0.8em; }
+    @include mx.media(){ 
+      font-size: 0.8em; 
+    }
 
     &:hover{ 
       opacity: var(--opacity); 
