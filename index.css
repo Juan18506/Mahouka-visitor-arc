@@ -25,15 +25,15 @@
     background-position-y: 92.5%;
   }
 }
-@keyframes opacityBgIn {
-  from, 50% {
-    background-color: rgba(0, 0, 0, 0);
+@keyframes zoomImage {
+  from {
+    scale: 1.15;
   }
   to {
-    background-color: rgba(0, 0, 0, 0.7);
+    scale: 1;
   }
 }
-@keyframes opacityIn {
+@keyframes fadeIn {
   from, 50% {
     opacity: 0;
   }
@@ -41,34 +41,34 @@
     opacity: 1;
   }
 }
-@keyframes fadeInRight {
+@keyframes fadeInBottom {
   from, 50% {
     opacity: 0;
-    margin-top: 0;
+    transform: translateY(-100%);
   }
   75%, to {
     opacity: 1;
-    margin-top: 2em;
+    transform: translateY(0);
   }
 }
 @keyframes fadeInLeft {
   from, 50% {
     opacity: 0;
-    padding-right: 0;
+    transform: translateX(100%);
   }
   75%, to {
     opacity: 1;
-    padding-right: 1em;
+    transform: translateX(0);
   }
 }
 @keyframes fadeInRight {
   from, 50% {
     opacity: 0;
-    margin-left: 0;
+    transform: translateX(-100%);
   }
   75%, to {
     opacity: 1;
-    margin-left: 1.5em;
+    transform: translateX(0);
   }
 }
 @keyframes rotate360 {
@@ -173,7 +173,7 @@ body {
   height: 100%;
   background-color: var(--c-modal-opacity);
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 6;
@@ -370,7 +370,7 @@ body {
   left: 0;
   z-index: 1;
   background-color: var(--c-bg-opacity);
-  animation: opacityBgIn 3s ease;
+  animation: fadeIn 3s ease;
 }
 @media screen and (max-width: 750px) {
   .hero::after {
@@ -382,7 +382,7 @@ body {
   width: 12em;
   height: 20em;
   position: relative;
-  animation: opacityIn 1.5s ease;
+  animation: fadeIn 1.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__h1 {
@@ -415,7 +415,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  animation: opacityIn 3.5s ease;
+  animation: fadeIn 3.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__img--center {
@@ -424,7 +424,7 @@ body {
     position: relative;
     background-size: cover;
     background-position: center;
-    animation: opacityBgIn 2s ease;
+    animation: zoomImage 2s ease;
   }
 }
 .hero__img--text {
@@ -434,7 +434,7 @@ body {
   top: 4em;
   right: 2em;
   z-index: 3;
-  animation: fadeinRight 3.5s ease;
+  animation: fadeInBottom 3.5s ease;
 }
 @media screen and (max-width: 750px) {
   .hero__img--text {

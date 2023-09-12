@@ -24,7 +24,7 @@
     left: 0;
     z-index: 1;
     background-color: var(--c-bg-opacity);
-    animation: opacityBgIn 3s ease;
+    animation: fadeIn 3s ease;
     @include mx.media(){
       display: none;
       animation: none;
@@ -35,7 +35,7 @@
     width: 12em;
     height: 20em;
     position: relative;
-    animation: opacityIn 1.5s ease;
+    animation: fadeIn 1.5s ease;
     @include mx.media(){
       width: 60%;
       height: 70%;
@@ -64,14 +64,14 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      animation: opacityIn 3.5s ease;
+      animation: fadeIn 3.5s ease;
       @include mx.media(){
         width: 100vw;
         height: calc((100vw * 1500) / 1059);
         position: relative;
         background-size: cover;
         background-position: center;
-        animation: opacityBgIn 2s ease;
+        animation: zoomImage 2s ease;
       }
     }
     &--text{
@@ -81,7 +81,7 @@
       top: 4em;
       right: 2em;
       z-index: 3;
-      animation: fadeinRight 3.5s ease;
+      animation: fadeInBottom 3.5s ease;
       @include mx.media(){ 
         display: none;
         animation: none;
