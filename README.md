@@ -37,7 +37,7 @@ pnpm install
 When installation is complete, run :
 
 ```
-pnpm run dev
+pnpm dev
 ```
 
 ## License 
