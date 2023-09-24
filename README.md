@@ -1,6 +1,6 @@
 # Mahouka visitor arc
 
-It's a copycat of Mahouka visitor arc landing page, It was made using HTML, SCSS, BEM methodology and Javascript.
+It's a copycat of Mahouka visitor arc landing page, It was made with HTML, SCSS, BEM methodology and Javascript.
 
 [![Original website](https://img.shields.io/static/v1?label=&message=Original%20Site&color=00726b&style=for-the-badge)](https://mahouka.us/2nd/)
 [![Live Site](https://img.shields.io/static/v1?label=&message=Live%20Site&color=167200&style=for-the-badge)](https://juan18506.github.io/mahouka-visitor-arc/)
