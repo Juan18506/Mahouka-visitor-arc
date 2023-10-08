@@ -1,6 +1,6 @@
-@use '../partials/mixins' as mx;
+@use "../partials/mixins" as mx;
 
-.footer{
+.footer {
   width: 100%;
   padding: 2.55em 2em;
   @include mx.flex(row, nowrap, space-between, center);
@@ -8,35 +8,35 @@
   z-index: 0;
   overflow: hidden;
   background-color: var(--c-black);
-  @include mx.media(){
+  @include mx.media() {
     padding: 2.5em 0 3.4375em;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
   }
 
-  &__background{
+  &__background {
     position: absolute;
     top: -30;
     left: -335px;
     z-index: -1;
     animation: rotate360 90s infinite linear;
   }
-  &__img{
+  &__img {
     width: 100%;
     height: 100%;
   }
-  &__ul{
+  &__ul {
     @include mx.flex(row, nowrap, center, center);
     gap: 1em;
-    @include mx.media(){ 
+    @include mx.media() {
       gap: 1.5em;
     }
   }
-  &__li{ 
-    color: var(--c-white); 
+  &__li {
+    color: var(--c-white);
   }
-  &__span{
+  &__span {
     margin-right: 1em;
     padding-bottom: 1px;
     border-bottom: 1px solid var(--c-white);
@@ -44,53 +44,54 @@
     text-transform: uppercase;
     font-weight: bold;
     cursor: default;
-    @include mx.media(){ 
-      margin: 0; 
+    @include mx.media() {
+      margin: 0;
     }
   }
-  &__a{}
-  &__svg{
+  &__a {
+  }
+  &__svg {
     width: 1.5625em;
     height: 1.5625em;
     transition: all 200ms ease;
 
-    &:hover{ 
-      opacity: var(--opacity) 
+    &:hover {
+      opacity: var(--opacity);
     }
   }
-  &__wrapper{
+  &__wrapper {
     @include mx.flex(column, nowrap, center, flex-end);
     gap: 0.75em;
-    @include mx.media(){
+    @include mx.media() {
       align-items: center;
       gap: 1em;
     }
   }
 }
 
-.wrapper{
+.wrapper {
   &__text {
     @include mx.flex(row, nowrap, flex-end, center);
     gap: 2em;
   }
-  &__a{
+  &__a {
     font-size: 0.875em;
     color: var(--c-white);
     transition: all 200ms ease;
     text-transform: uppercase;
-    @include mx.media(){ 
-      font-size: 0.8em; 
+    @include mx.media() {
+      font-size: 0.8em;
     }
 
-    &:hover{ 
-      opacity: var(--opacity); 
+    &:hover {
+      opacity: var(--opacity);
     }
   }
-  &__p{
+  &__p {
     font-size: 0.75em;
     color: var(--c-lightgrey);
     text-align: center;
-    @include mx.media(){
+    @include mx.media() {
       padding: 0 1em;
       font-size: 0.7em;
     }

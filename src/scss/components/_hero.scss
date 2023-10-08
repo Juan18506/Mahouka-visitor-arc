@@ -1,21 +1,21 @@
-@use '../partials/mixins' as mx;
+@use "../partials/mixins" as mx;
 
-.hero{
+.hero {
   height: 100vh;
   width: 100%;
   position: relative;
   z-index: 0;
-  background: url('/kv.webp') 50% 92.5% / 110%;
+  background: url("/kv.webp") 50% 92.5% / 110%;
   animation: slideDown 60s linear;
-  @include mx.media(){
+  @include mx.media() {
     height: fit-content;
     position: static;
     background: none;
     animation: none;
   }
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     width: 100%;
     height: 100%;
     display: block;
@@ -25,39 +25,39 @@
     z-index: 1;
     background-color: var(--c-bg-opacity);
     animation: fadeIn 3s ease;
-    @include mx.media(){
+    @include mx.media() {
       display: none;
       animation: none;
     }
   }
-  
-  &__h1{
+
+  &__h1 {
     width: 12em;
     height: 20em;
     position: relative;
     animation: fadeIn 1.5s ease;
-    @include mx.media(){
+    @include mx.media() {
       width: 60%;
       height: 70%;
       position: absolute;
       animation: none;
     }
   }
-  &__img{
+  &__img {
     position: absolute;
     pointer-events: none;
-    
-    &--logo{
+
+    &--logo {
       top: 1.5em;
       left: 1.5em;
       z-index: 3;
-      @include mx.media(){
+      @include mx.media() {
         top: 20%;
         left: 30%;
-        content: url('/logo_sp.webp');
+        content: url("/logo_sp.webp");
       }
     }
-    &--center{
+    &--center {
       width: auto;
       height: 100vh;
       top: 0;
@@ -65,7 +65,7 @@
       transform: translateX(-50%);
       z-index: 2;
       animation: fadeIn 3.5s ease;
-      @include mx.media(){
+      @include mx.media() {
         width: 100vw;
         height: calc((100vw * 1500) / 1059);
         position: relative;
@@ -74,7 +74,7 @@
         animation: zoomImage 2s ease;
       }
     }
-    &--text{
+    &--text {
       width: 32em;
       height: 7em;
       margin-top: 2em;
@@ -82,13 +82,13 @@
       right: 2em;
       z-index: 3;
       animation: fadeInBottom 3.5s ease;
-      @include mx.media(){ 
+      @include mx.media() {
         display: none;
         animation: none;
       }
     }
   }
-  &__streaming{
+  &__streaming {
     max-width: 15em;
     height: auto;
     margin-left: 1.5em;
@@ -98,7 +98,7 @@
     z-index: 3;
     pointer-events: none;
     animation: fadeInRight 3.5s ease;
-    @include mx.media(){
+    @include mx.media() {
       max-width: none;
       margin: 0;
       padding: 0 0 2em 0;
@@ -110,28 +110,28 @@
   }
 }
 
-.streaming{
-  &__img{
+.streaming {
+  &__img {
     width: 100%;
     height: 100%;
     margin-bottom: 0.5em;
-    @include mx.media(){ 
+    @include mx.media() {
       padding: 2em 1em;
     }
   }
-  &__border{
+  &__border {
     width: 15.0625em;
     height: 8.4727em;
     position: relative;
     z-index: 1;
     pointer-events: all;
-    @include mx.media(){
+    @include mx.media() {
       width: 100vw;
       height: auto;
     }
 
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       width: 100%;
       height: 100%;
       display: block;
@@ -143,24 +143,24 @@
       border: 1px solid var(--c-white);
       cursor: pointer;
       transition: all 300ms ease;
-      @include mx.media(){ 
-        border: 0; 
+      @include mx.media() {
+        border: 0;
       }
     }
-    &:hover::after{
+    &:hover::after {
       background-color: var(--c-bg-nopacity);
       border-color: var(--c-blue);
     }
   }
-  &__iframe{ 
+  &__iframe {
     width: 100%;
     height: 100%;
-    @include mx.media(){
+    @include mx.media() {
       width: 100vw;
       height: calc((100vw * 9) / 16);
     }
   }
-  &__btn{
+  &__btn {
     width: 1.875em;
     height: 1.875em;
     margin: 0.75em;
@@ -169,7 +169,7 @@
     right: 0;
     z-index: 4;
     pointer-events: none;
-    @include mx.media(){
+    @include mx.media() {
       width: 10vw;
       height: auto;
       bottom: 0.5em;

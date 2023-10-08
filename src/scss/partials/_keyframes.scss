@@ -1,27 +1,28 @@
-@keyframes slideDown{
-  from{
+@keyframes slideDown {
+  from {
     background-position-y: 0%;
     filter: blur(6em);
   }
-  2%{
+  2% {
     filter: blur(0);
   }
-  to{
+  to {
     background-position-y: 92.5%;
   }
 }
 
-@keyframes zoomImage{
-  from{
+@keyframes zoomImage {
+  from {
     scale: 1.15;
   }
-  to{
+  to {
     scale: 1;
   }
 }
 
-@keyframes fadeIn{
-  from, 50% {
+@keyframes fadeIn {
+  from,
+  50% {
     opacity: 0;
   }
   to {
@@ -29,40 +30,46 @@
   }
 }
 
-@keyframes fadeInBottom{
-  from, 50%{
+@keyframes fadeInBottom {
+  from,
+  50% {
     opacity: 0;
     transform: translateY(-100%);
   }
-  75%, to{
+  75%,
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes fadeInLeft{
-  from, 50%{
+@keyframes fadeInLeft {
+  from,
+  50% {
     opacity: 0;
     transform: translateX(+100%);
   }
-  75%, to{
+  75%,
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes fadeInRight{
-  from, 50%{
+@keyframes fadeInRight {
+  from,
+  50% {
     opacity: 0;
     transform: translateX(-100%);
   }
-  75%, to{
+  75%,
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes rotate360{
+@keyframes rotate360 {
   from {
     transform: rotate(0deg);
   }

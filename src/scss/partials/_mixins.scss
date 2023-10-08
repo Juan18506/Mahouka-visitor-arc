@@ -1,4 +1,4 @@
-@mixin flex($dir, $wrap, $just, $align ) {
+@mixin flex($dir, $wrap, $just, $align) {
   display: flex;
   flex-flow: $dir $wrap;
   justify-content: $just;
@@ -7,6 +7,6 @@
 
 @mixin media($width: 750px) {
   @media screen and (max-width: $width) {
-    @content
+    @content;
   }
 }

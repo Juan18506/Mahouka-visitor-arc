@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: '/mahouka-visitor-arc/',
+  base: "/mahouka-visitor-arc/",
 });

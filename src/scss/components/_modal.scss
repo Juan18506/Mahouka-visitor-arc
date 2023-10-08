@@ -1,6 +1,6 @@
-@use '../partials/mixins' as mx;
+@use "../partials/mixins" as mx;
 
-.modal{
+.modal {
   width: 100%;
   height: 100%;
   background-color: var(--c-modal-opacity);
@@ -10,19 +10,19 @@
   left: 0;
   z-index: 6;
 
-  &__iframe{
+  &__iframe {
     width: 57.5rem;
     height: 32.375rem;
     position: fixed;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include mx.media(){
+    @include mx.media() {
       width: 100vw;
       height: calc((100vw * 9) / 16);
     }
   }
-  &__btn{
+  &__btn {
     width: 6em;
     height: 6em;
     display: block;
@@ -31,24 +31,24 @@
     top: 3em;
     cursor: pointer;
     transition: all 200ms ease;
-    @include mx.media(){
+    @include mx.media() {
       width: 3em;
       height: 3em;
       top: 1em;
       right: 1em;
     }
 
-    &:hover{
+    &:hover {
       transform: rotate(180deg);
     }
   }
-  &__svg{
+  &__svg {
     width: 100%;
     height: 100%;
     fill: var(--c-white);
   }
 
-  &--inactive{ 
-    display: none; 
+  &--inactive {
+    display: none;
   }
 }

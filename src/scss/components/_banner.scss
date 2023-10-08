@@ -1,25 +1,25 @@
-@use '../partials/mixins' as mx;
+@use "../partials/mixins" as mx;
 
-.banner{
+.banner {
   padding: 1.5em 0;
   @include mx.flex(row, nowrap, center, center);
   gap: 1.5em;
   background-color: var(--c-grey);
-  @include mx.media(){
+  @include mx.media() {
     padding: 2.125em 0;
   }
 
-  &__img{
+  &__img {
     width: 13.75em;
     height: 100%;
     transition: all 200ms ease;
-    @include mx.media(){
+    @include mx.media() {
       max-width: 9.375em;
       height: 100%;
     }
 
-    &:hover{ 
-      opacity: var(--opacity); 
+    &:hover {
+      opacity: var(--opacity);
     }
   }
 }

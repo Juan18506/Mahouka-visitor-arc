@@ -1,27 +1,34 @@
-* , *::before , *::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   vertical-align: baseline;
 }
-*::before , *::after{
+*::before,
+*::after {
   display: block;
 }
 
-img , picture , video , iframe , figure{
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
-  object-fit: cover;        
+  object-fit: cover;
   object-position: center center;
 }
 
 a {
   display: block;
   text-decoration: none;
-  color:inherit;
-  font-size:inherit;
+  color: inherit;
+  font-size: inherit;
 }
 
 p a {
@@ -36,17 +43,34 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 ::selection {
@@ -54,32 +78,39 @@ blockquote:before, blockquote:after, q:before, q:after {
   color: var(--c-white);
 }
 
-form , input, textarea, select , button , label{
+form,
+input,
+textarea,
+select,
+button,
+label {
   font-family: inherit;
   font-size: inherit;
   hyphens: auto;
   background-color: transparent;
-  color:inherit;
+  color: inherit;
   display: block;
   appearance: none;
 }
 
-table , tr , td {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-svg{
+svg {
   width: 100%;
   display: block;
   fill: currentColor;
 }
 
 body {
-  min-height  : 100vh;
-  font-size   : 100%;
-  font-family : var(--primary-fonts);
-  color       : var(--c-black);
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--primary-fonts);
+  color: var(--c-black);
   hyphens: auto;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;

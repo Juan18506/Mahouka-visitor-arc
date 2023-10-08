@@ -13,15 +13,15 @@ It's a copycat of Mahouka visitor arc landing page, It was made with HTML, SCSS,
 ![JavaScript](https://img.shields.io/static/v1?label=&message=JavaScript&color=ffbe00&logo=javascript&logoColor=white&style=for-the-badge)
 ![BEM Methodology](https://img.shields.io/static/v1?label=&message=BEM%20Methodology&color=lightblue&logo=bem&logoColor=white&style=for-the-badge)
 
-## Author 
-**Juan Alves Pedreira**
+## Author
 
+**Juan Alves Pedreira**
 
 ## Installation and usage
 
 ### Runing the project
 
-Clone this repository: 
+Clone this repository:
 
 ```
 git clone https://github.com/juan18506/mahouka-visitor-arc.git
@@ -40,5 +40,6 @@ When installation is complete, run :
 pnpm dev
 ```
 
-## License 
+## License
+
 MIT License
