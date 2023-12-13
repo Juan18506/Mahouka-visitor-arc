@@ -1,21 +1,25 @@
 # Mahouka visitor arc
+![Project image](https://i.imgur.com/vjXbHQz.png)
+
+## Live example
+- [Github pages](https://juan18506.github.io/mahouka-visitor-arc/)
+
+## Description 📑
 
 It's a replica of the Mahouka Visitor Arc landing page, created using HTML, SCSS, the BEM methodology, and JavaScript.
 
-[![Original website](https://img.shields.io/static/v1?label=&message=Original%20Site&color=00726b&style=for-the-badge)](https://mahouka.us/2nd/)
-[![Live Site](https://img.shields.io/static/v1?label=&message=Live%20Site&color=167200&style=for-the-badge)](https://juan18506.github.io/mahouka-visitor-arc/)
-[![Github Repository](https://img.shields.io/static/v1?label=&message=Github%20Repository&color=000000&style=for-the-badge&logo=github&logoColor=white)](https://github.com/juan18506/mahouka-visitor-arc/)
-
-## Technologies
-
-![HTML](https://img.shields.io/static/v1?label=&message=Html&color=orange&logo=html5&logoColor=white&style=for-the-badge)
+## Technologies 🛠
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://es.wikipedia.org/wiki/HTML5)
 ![SASS](https://img.shields.io/static/v1?label=&message=SASS&color=CC6699&logo=sass&logoColor=white&style=for-the-badge)
-![JavaScript](https://img.shields.io/static/v1?label=&message=JavaScript&color=ffbe00&logo=javascript&logoColor=white&style=for-the-badge)
+[![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
 ![BEM Methodology](https://img.shields.io/static/v1?label=&message=BEM%20Methodology&color=lightblue&logo=bem&logoColor=white&style=for-the-badge)
 
-## Author
+## Author ✒️
+**Juan Andres Alves Pedreira Luceno**
 
-**Juan Alves Pedreira**
+* [Email](mailto:alvespedreiralucenojuanandres@gmail.com)
+* [LinkedIn](https://www.linkedin.com/in/juan-alves-pedreira/)
+* [Web portfolio](https://juan18506.github.io/)
 
 ## Installation and usage
 
@@ -43,3 +47,4 @@ pnpm dev
 ## License
 
 MIT License
+
